@@ -13,7 +13,7 @@ download the project and execute the following command to run the program
  ## npm i mongodb
 
 Command to execute the server
-##node app.js
+## node app.js
 
 command to execute the client
  ## npm start
