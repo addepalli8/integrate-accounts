@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Card, CardMedia, Avatar } from '@material-ui/core';
+
 import './App.css';
 
 class App extends Component {
@@ -16,11 +17,11 @@ class App extends Component {
   //extracting data to the simpler forms for representation of the whole data
   //used material ui for the presentation
 	query = () => {
-		fetch('https://api.github.com/search/users?q=repos:%3E-1&sort=joined&order=desc&per_page=100')
+		fetch('http://localhost:2000/getall')
 			.then((resp) => resp.json())
 			.then((data) => {
 				this.setState({
-					users: data.items.map((user, i) => (
+					users: data.map((user, i) => (
 						<Card key={i} className="card">
 							<CardMedia>
 								<Avatar
