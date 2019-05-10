@@ -1,7 +1,5 @@
-### `integrating github accounts`
-
 ## GuestTouch Assignment
-
+### `integrating github accounts`
 # including mongodb and nodejs
 The project was build using github API for retriving the details of the github users , repositories and neccessary information.
 download the project and execute the following command to run the program
